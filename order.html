@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Cácalicious</title>
+      <link rel="stylesheet" href="styles.css" type="text/css" media="screen">
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127501053-1"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'UA-127501053-1');
+         
+      </script>
+   </head>
+   <body>
+      <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></div>
+      <nav class="stroke">
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="order.html">Order</a></li>
+         </ul>
+      </nav>
+      <form action="index.html" method="post">
+         <fieldset>
+            <legend><span class="number">1</span> Your basic info</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name">
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email">
+            <label for="address">Address:</label>
+            <input type="address" id="address" name="user_address">
+         </fieldset>
+         <fieldset>
+            <legend><span class="number">2</span> Your order</legend>
+            <label for="order">Let us know what you're looking for:</label>
+            <textarea id="order" name="user_order"></textarea>
+         </fieldset>
+         <fieldset>
+            <div>
+               <label class="rad-label">
+                  <input type="radio" class="rad-input" name="rad" checked>
+                  <div class="rad-design"></div>
+                  <div class="rad-text">Wedding</div>
+               </label>
+               <label class="rad-label">
+                  <input type="radio" class="rad-input" name="rad">
+                  <div class="rad-design"></div>
+                  <div class="rad-text">Christening</div>
+               </label>
+               <label class="rad-label">
+                  <input type="radio" class="rad-input" name="rad">
+                  <div class="rad-design"></div>
+                  <div class="rad-text">Birthday</div>
+               </label>
+               <label class="rad-label">
+                  <input type="radio" class="rad-input" name="rad">
+                  <div class="rad-design"></div>
+                  <div class="rad-text">Other</div>
+               </label>
+            </div>
+         </fieldset>
+         <button type="submit">Submit</button>
+      </form>
+      <div class="footer">
+         <p>©2021 - Cácalicious.</p>
+      </div>
+   </body>
+</html>
